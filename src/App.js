@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import PassengerList from "./PassengerList.js";
+import StudentAttendance from "./StudentAttendance.js";
 
 function App() {
+  const passengers = [
+    { name: "Rahul", mobile: "999999", source: "Hyd", destination: "Blr", date: "2026-03-25" },
+    { name: "Priya", mobile: "888888", source: "Chennai", destination: "Delhi", date: "2026-03-26" }
+  ];
+
+  const students = [
+    { id: 1, name: "Amit", branch: "CSE", absent: false },
+    { id: 2, name: "Neha", branch: "AI", absent: true }
+  ];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <PassengerList passengers={passengers} />
+      <StudentAttendance students={students} />
     </div>
   );
 }
