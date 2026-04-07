@@ -1,70 +1,202 @@
-# Getting Started with Create React App
+# MSWD Lab — Complete Web Development Experiments
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A comprehensive interactive learning platform featuring **20 hands-on experiments** covering React, Node.js, MongoDB, APIs, Authentication, GraphQL, TypeScript, Testing, and Cloud Deployment.
 
-## Available Scripts
+## 🚀 Quick Start
 
-In the project directory, you can run:
+```bash
+npm install
+npm start
+```
 
-### `npm start`
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📚 Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Home Page with Experiment Cards
+Navigate to the home page to see all 20 experiments organized by category:
+- **🔵 Frontend (Exp 1-6)**: React components, hooks, routing, Material-UI, Bootstrap, Axios
+- **🟢 Database (Exp 7-9)**: MongoDB schema design, CRUD, Atlas cloud
+- **🟠 Backend (Exp 10-15)**: Express, JWT auth, RBAC, file operations
+- **🟣 Advanced (Exp 16-20)**: Full-stack auth, GraphQL, TypeScript, testing, cloud deployment
+
+Each card shows:
+- Experiment number and category badge
+- Brief description of what is learned
+- Quick preview of key topics
+
+### Experiment Pages with Dual Tabs
+
+Click any experiment card to open its detail page with two tabs:
+
+#### 📋 Details Tab
+- **Objective**: Clear learning goal
+- **Tasks**: 4+ hands-on tasks to complete
+- **Key Concepts**: Technologies and patterns covered
+- **Source Files**: Links to implementation files
+
+#### ▶ Live Output Tab
+Interactive demonstrations for each experiment:
+
+**Frontend (Exp 1-6)**: Live, fully functional components
+- Passenger List with add/remove
+- Student Attendance tracking with stats
+- Timer with start/pause/reset
+- Course catalog with filtering
+- User cards with profiles
+- API consumers with mock data
+
+**Backend & Database (Exp 7-20)**: Animated terminal-style output
+- MongoDB commands and responses
+- Express API routes and responses
+- JWT authentication flow
+- Role-based access control
+- GraphQL queries and mutations
+- TypeScript compilation
+- Test suite results
+- Docker and Azure deployment commands
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Launches the test runner in the interactive watch mode.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Builds the app for production to the `build` folder (minified and optimized).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📖 Complete 20 Experiments
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Frontend (React) — Exp 1–6
+| # | Title | Key Topics |
+|---|-------|-----------|
+| 1 | React Components | Components, JSX, props, state, event handling |
+| 2 | Hooks & State | useState, default props, conditional rendering |
+| 3 | React Router | Routes, nested routing, URL parameters |
+| 4 | Material-UI | MUI components, theming, dark mode |
+| 5 | Bootstrap | Grid system, responsive design, utilities |
+| 6 | Axios & API | HTTP requests, error handling, data fetching |
 
-### `npm run eject`
+### Database — Exp 7–9
+| # | Title | Key Topics |
+|---|-------|-----------|
+| 7 | MongoDB Design | Schema modeling, relationships, collections |
+| 8 | MongoDB CRUD | insertMany, find, updateOne, deleteOne |
+| 9 | MongoDB Atlas | Cloud database, Node.js driver, sorting |
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Backend (Express) — Exp 10–15
+| # | Title | Key Topics |
+|---|-------|-----------|
+| 10 | Express Basics | GET, POST, PUT, DELETE routes |
+| 11 | Express Router | Modular routing, multiple resources |
+| 12 | JWT Auth | Token generation, protected routes |
+| 13 | JWT Expiry | Access/refresh tokens, revocation |
+| 14 | Role-Based Auth | Admin, user, moderator roles & RBAC |
+| 15 | File Operations | Create, read, update, delete files |
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Advanced — Exp 16–20
+| # | Title | Key Topics |
+|---|-------|-----------|
+| 16 | Full Stack Auth | React + Express + JWT integration |
+| 17 | GraphQL | Schema, queries, mutations, Apollo |
+| 18 | TypeScript | Interfaces, typed components, type safety |
+| 19 | Testing | Jest, React Testing Library, unit tests |
+| 20 | Cloud Deployment | Docker, CI/CD, Azure App Service |
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📁 Project Structure
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+src/
+├── App.js
+├── pages/
+│   ├── Home.js              # 20 experiment cards
+│   └── ExperimentPage.js    # Details + Output tabs
+├── outputs/
+│   ├── Exp1Output.js        # Interactive components for Exp 1
+│   ├── Exp2Output.js        # Interactive components for Exp 2
+│   ├── Exp3Output.js        # Interactive components for Exp 3
+│   ├── Exp4Output.js        # Train reservation form
+│   ├── Exp5Output.js        # Jobs catalog
+│   ├── Exp6Output.js        # API consumers
+│   └── ServerOutputs.js     # Terminal outputs (Exp 7-20)
+└── [Create React App files]
 
-## Learn More
+experiments/
+├── exp1-react-components/   # PassengerList, StudentAttendance, Timer, CourseList
+├── exp2-hooks-and-state/    # Greeting, UserCard, Counter, Toggle
+├── exp3-react-router/       # Home, Friends, Posts, Chat, Login, Hospital
+├── exp4-material-ui/        # Train Reservation Form, Theme Customization
+├── exp5-bootstrap/          # Jobs Catalog, Bootstrap Components
+├── exp6-axios-api/          # API Consumers
+... (and so on through exp20)
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🎯 How to Use
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. **Run the app**: `npm start` — Opens at http://localhost:3000
+2. **Browse**: See all 20 experiments with color-coded categories
+3. **Click Card**: Open experiment detail page
+4. **Read Details**: Tab 1 shows objectives, tasks, concepts, files
+5. **See Output**: Tab 2 shows live, interactive demonstrations
+6. **Learn**: Study the experiment files in `experiments/` folder
 
-### Code Splitting
+## 🎓 Learning Path
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+**Phase 1: Frontend Fundamentals**
+- Exp 1: Basic React components and state
+- Exp 2: Hooks and functional component patterns
+- Exp 3: Client-side routing with React Router
 
-### Analyzing the Bundle Size
+**Phase 2: Modern UI Frameworks**
+- Exp 4: Material-UI enterprise components
+- Exp 5: Bootstrap responsive design
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+**Phase 3: External Data**
+- Exp 6: HTTP requests with Axios
 
-### Making a Progressive Web App
+**Phase 4: Database Layer**
+- Exp 7: Schema design and modeling
+- Exp 8: CRUD operations
+- Exp 9: MongoDB Atlas cloud integration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+**Phase 5: Backend Services**
+- Exp 10: Express fundamentals
+- Exp 11: Modular routing
+- Exp 12-15: Authentication & authorization
 
-### Advanced Configuration
+**Phase 6: Advanced Topics**
+- Exp 16: Full-stack integration
+- Exp 17: GraphQL APIs
+- Exp 18: Type-safe TypeScript
+- Exp 19: Testing
+- Exp 20: Production deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🛠 Technologies Used
 
-### Deployment
+| Category | Technologies |
+|----------|--------------|
+| Frontend | React 19, React Router v6, Material-UI, Bootstrap 5 |
+| Backend | Node.js, Express.js, JWT, GraphQL, Apollo |
+| Database | MongoDB (local), MongoDB Atlas (cloud) |
+| Testing | Jest, React Testing Library, Supertest |
+| Deployment | Docker, GitHub Actions, Azure App Service |
+| Language | JavaScript, TypeScript |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 📝 Features
 
-### `npm run build` fails to minify
+✅ Interactive live outputs for frontend experiments (React components with state)
+✅ Simulated terminal outputs for backend/database experiments
+✅ Animated typewriter effect for command outputs
+✅ Glassmorphism design on dark gradient background
+✅ Responsive cards with hover effects
+✅ Tabbed interface for details vs live output
+✅ All 20 experiments accessible from one dashboard
+✅ Mobile-friendly responsive layout
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 💡 Notes
+
+- Frontend outputs (Exp 1-6) are fully interactive React components
+- Backend outputs (Exp 7-20) show realistic terminal simulations
+- Each experiment is self-contained in the `experiments/` folder
+- Source code is fully commented and beginner-friendly
+- No backend server required — all UI-based demonstration
+

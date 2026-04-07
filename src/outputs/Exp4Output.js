@@ -27,7 +27,6 @@ export default function Exp4Output() {
     }
   };
 
-  const bg = theme === 'light' ? '#fff' : '#1e1e2e';
   const text = theme === 'light' ? '#333' : '#eee';
   const cardBg = theme === 'light' ? '#f5f5f5' : '#2a2a3e';
 

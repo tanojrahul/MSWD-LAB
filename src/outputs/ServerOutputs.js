@@ -294,7 +294,7 @@ export const Exp16Output = () => {
     return (
       <div>
         <div style={{ background: '#0d1117', borderRadius: 8, padding: 14, fontFamily: 'monospace', fontSize: 12, marginBottom: 14 }}>
-          <div style={{ color: '#8b949e', marginBottom: 6 }}>// Token stored in localStorage</div>
+          <div style={{ color: '#8b949e', marginBottom: 6 }}>{"// Token stored in localStorage"}</div>
           <div style={{ color: '#3fb950', wordBreak: 'break-all' }}>JWT: {token.substring(0, 60)}...</div>
         </div>
         <div style={{ background: '#d4edda', border: '1px solid #c3e6cb', borderRadius: 8, padding: 20 }}>
